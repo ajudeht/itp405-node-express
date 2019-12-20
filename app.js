@@ -1,7 +1,7 @@
 var express = require('express');
 var knex = require('knex');
 var app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 let db = new knex({
   client: 'sqlite3',
